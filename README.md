@@ -22,12 +22,12 @@ Il vous permet d'écrire et d'exécuter des tests d'acceptation / unitaires auto
 
 # Framework mis en place
 
-La solution proposée est "frwTNRWebDartagnanGherkin" basée sur Selenium webdriver, cucumber et Junit.
+La solution proposée est "frwTNRWebGherkin" basée sur Selenium webdriver, cucumber et Junit.
 
 - frw = framework
 - TNR = Tests de Non-Régression
 - Web= Application web
-- Dartagnan= Nom application
+- seleniumn= Nom application
 - Gherkin= Syntaxe Behavior Driven Development (BDD)
 
 # Technologies et Environments 
@@ -61,6 +61,7 @@ La solution proposée est "frwTNRWebDartagnanGherkin" basée sur Selenium webdri
   - stepDefinitions
   - pageObjects
   - reports
+  
 #  Où sont écrits les tests ?
 
 Les tests sont écrits dans le repertoire src/spec/feature avec le syntaxe Gherkin
@@ -81,10 +82,8 @@ Les tests sont écrits dans le repertoire src/spec/feature avec le syntaxe Gherk
 
 
 # Reporting 
-Les résultats de test s’affichent dans un rapport Extent nommé Dartagnan.html dans le dossier Target / Cucumber-reports
-<p align="center">
-<img width="350" alt="y" src="https://user-images.githubusercontent.com/62071683/85183431-f17e3580-b28b-11ea-927d-f47a68c28fa0.PNG">
-</p>
+Les résultats de test s’affichent dans un rapport Extent nommé Rapport.html dans le dossier Target / Cucumber-reports
+
 
 
 
