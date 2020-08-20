@@ -19,7 +19,7 @@ public class Setup {
 	 **/
 	public static void setUp() {
 		driverManager = DriverManagerFactory.getManager(DriverType.CHROME);
-	driver = driverManager.getDriver();
+		driver = driverManager.getDriver();
 //		driver.get("https://opensource-demo.orangehrmlive.com/index.php/dashboard");
 	}
 

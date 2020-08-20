@@ -1,4 +1,4 @@
-@connexion 
+@connexionPat 
 Feature: Authentification-Orange 
 	Entant que utilisateur je souhaite m'enthentifier
 
