@@ -14,21 +14,21 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 
+
 public class AuthentificationStepDefinition extends Common{
 
 	public WebDriver driver;
 	
-	private AuthentificationPage authentificationPage = new AuthentificationPage();
+	AuthentificationPage authentificationPage =new  AuthentificationPage(driver);
+
 	
-	public AuthentificationStepDefinition() {
-		driver=Setup.driver;
-	}
+	
 	
 	@Given("^Open application$")
 	public void openApplication() throws Throwable {
 		logger.info("Open application Orange");
-		String url = "https://opensource-demo.orangehrmlive.com/index.php/dashboard";
-		driver.get(url);
+		authentificationPage.navigate();
+		
 	}
 
 	@When("^Set UserName$")

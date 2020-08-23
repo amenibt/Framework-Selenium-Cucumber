@@ -1,11 +1,11 @@
-@connexionPat 
-Feature: Authentification-Orange 
-	Entant que utilisateur je souhaite m'enthentifier
+@Patient
+Feature: Patient - FullName
+  ETQ User je souhaite de remplir le nom du patient
 
-@cnx 
-Scenario: Authentification-Orange 
-	Given Open application 
-	When Set UserName 
-	And Set Password 
-	And Clik on button Login 
-	Then welcome page appears
+  @cnx2
+  Scenario: Patient - FullName
+    Given Open patient application
+    When Set FirstName
+    And Set LastName
+    And Click button Submit
+    Then Show an error message

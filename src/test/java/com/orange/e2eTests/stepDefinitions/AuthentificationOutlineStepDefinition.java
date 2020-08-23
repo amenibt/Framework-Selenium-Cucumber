@@ -15,8 +15,8 @@ public class AuthentificationOutlineStepDefinition {
 	
 	private AuthentificationOutlinePage authentificationOutlinePage = new AuthentificationOutlinePage();
 	
-	public AuthentificationOutlineStepDefinition() {
-		driver=Setup.driver;
+	public AuthentificationOutlineStepDefinition(WebDriver driver) {
+		this.driver=driver;
 	}
 	
 	@When("^Set login \"([^\"]*)\"$")

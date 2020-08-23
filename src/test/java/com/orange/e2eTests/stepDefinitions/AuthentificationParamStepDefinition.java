@@ -13,8 +13,8 @@ public class AuthentificationParamStepDefinition {
 	
 	private AuthentificationParamPage authentificationParamPage = new AuthentificationParamPage();
 	
-	public AuthentificationParamStepDefinition() {
-		driver=Setup.driver;
+	public AuthentificationParamStepDefinition(WebDriver driver) {
+		this.driver=driver;
 	}
 	
 	@When("^Set Name \"([^\"]*)\"$")

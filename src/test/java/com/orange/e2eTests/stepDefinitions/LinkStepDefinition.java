@@ -10,8 +10,9 @@ public class LinkStepDefinition {
     public WebDriver driver;
 	private  LinkPage linkPage= new LinkPage ();
 	
-	public LinkStepDefinition() {
-		driver=Setup.driver;
+	public LinkStepDefinition(WebDriver driver) {
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
 	}
 	
 		
